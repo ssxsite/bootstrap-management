@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>网约车监管信息平台</title>
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min93e3.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+		<!--导航-->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse ">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><span>福州市网约车</span>监管信息平台</a>
+				<ul class="user-menu">
+					<li class="dropdown pull-right">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Admin <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="index.html"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;&nbsp;前台首页</a></li>
+	                        <li><a href="index.html"><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;个人设置</a></li>
+	                        <li><a href="index.html"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;&nbsp;账户中心</a></li>
+	                        <li><a href="index.html"><span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;我的收藏</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div><!-- /.container-fluid -->
+	</nav>
+	<!--侧边栏-->
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		<form role="search">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="查询">
+			</div>
+		</form>
+		<ul class="nav menu">
+			<li class=""><a href="index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+			<li><a href="widgets.html"><span class="glyphicon glyphicon-th"></span> 窗口</a></li>
+			<li><a href="charts.html"><span class="glyphicon glyphicon-stats"></span> 图表</a></li>
+			<li class="parent">
+				<a href="#">
+					<span class="glyphicon glyphicon-list-alt"></span> 表格<span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span>
+				</a>
+				<ul class="children collapse" id="sub-item-1">
+					<li>
+						<a class="" href="tables.html"><span class="glyphicon glyphicon-share-alt"></span>基本表格</a>
+					</li>
+					<li>
+						<a class="" href="jqgrid.html">
+							<span class="glyphicon glyphicon-share-alt"></span> jqgrid表单
+						</a>
+					</li>
+				</ul>
+			
+			</li>
+			<li class="parent">
+				<a href="#">
+					<span class="glyphicon glyphicon-list"></span> 表单 <span data-toggle="collapse" href="#sub-item-2" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span> 
+				</a>
+				<ul class="children collapse" id="sub-item-2">
+					<li>
+						<a class="" href="forms.html"><span class="glyphicon glyphicon-share-alt"></span>bootstrap基本表单</a>
+					</li>
+					<li>
+						<a class="" href="sunmernote.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 插件表单
+						</a>
+					</li>
+					<li>
+						<a class="" href="forms-advanced.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 高级表单
+						</a>
+					</li>
+					<li>
+						<a class="active" href="form-validate.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 验证表单
+						</a>
+					</li>
+				</ul>
+			
+				<!--<a href="forms.html"><span class="glyphicon glyphicon-pencil"></span> 表单</a></li>-->
+			<li><a href="panels.html"><span class="glyphicon glyphicon-info-sign"></span> 提示框 &amp; 面板</a></li>
+			<li class="parent">
+				<a href="#">
+					<span class="glyphicon glyphicon-list"></span> 下拉式列表 <span data-toggle="collapse" href="#sub-item-3" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span> 
+				</a>
+				<ul class="children collapse" id="sub-item-3">
+					<li>
+						<a class="" href="net-car.html">
+							<span class="glyphicon glyphicon-share-alt"></span>网约车全国数据统计图
+						</a>
+					</li>
+					<li>
+						<a class="" href="404.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 404页面
+						</a>
+					</li>
+					<li>
+						<a class="" href="#">
+							<span class="glyphicon glyphicon-share-alt"></span> 自定义页面3
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li role="presentation" class="divider"></li>
+			<li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Login Page</a></li>
+		</ul>
+		<!--<div class="attribution">More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></div>-->
+	</div><!--/.sidebar-->
+	<!--右侧内容-->
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+	
+	<!--面包屑-->
+	<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+				<li >验证表单</li>
+			</ol>
+		</div><!--/.row-->
+	
+	<!--页标题-->
+	<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header">验证表单</h1>
+			</div>
+		</div><!--/.row-->
+	
+	<!--表单验证-->
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>jQuery Validate 简介</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="tabs_panels.html#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="tabs_panels.html#">选项1</a>
+                            </li>
+                            <li><a href="tabs_panels.html#">选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <p>jquery.validate.js 是一款优秀的jQuery表单验证插件。它具有如下特点：</p>
+                    <ul>
+                        <li>安装简单</li>
+                        <li>内置超过20种数据验证方法</li>
+                        <li>直列错误提示信息</li>
+                        <li>可扩展的数据验证方法</li>
+                        <li>使用内置的元数据或插件选项来指定您的验证规则</li>
+                        <li>优雅的交互设计</li>
+                    </ul>
+                    <p>官网：<a href="http://jqueryvalidation.org/" target="_blank">http://jqueryvalidation.org/</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>简单示例</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="form_basic.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="form_basic.html#">选项1</a>
+                                </li>
+                                <li><a href="form_basic.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <form class="form-horizontal m-t" id="commentForm">
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">姓名：</label>
+                                <div class="col-sm-8">
+                                    <input id="cname" name="name" minlength="2" type="text" class="form-control" required="" aria-required="true">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">E-mail：</label>
+                                <div class="col-sm-8">
+                                    <input id="cemail" type="email" class="form-control" name="email" required="" aria-required="true">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">网站：</label>
+                                <div class="col-sm-8">
+                                    <input id="curl" type="url" class="form-control" name="url">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">说明：</label>
+                                <div class="col-sm-8">
+                                    <textarea id="ccomment" name="comment" class="form-control" required="" aria-required="true"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-3">
+                                    <button class="btn btn-primary" type="submit">提交</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+                        <p class="m-t">更多示例请访问官方示例页面：<a href="http://jqueryvalidation.org/files/demo/" target="_blank">查看</a>
+                        </p>
+                        <p>中文API可参考：<a href="http://www.w3cschool.cc/jquery/jquery-plugin-validate.html" target="_blank">http://www.w3cschool.cc/jquery/jquery-plugin-validate.html</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>完整验证表单</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="form_basic.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="form_basic.html#">选项1</a>
+                                </li>
+                                <li><a href="form_basic.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <form class="form-horizontal m-t" id="signupForm">
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">姓氏：</label>
+                                <div class="col-sm-8">
+                                    <input id="firstname" name="firstname" class="form-control" type="text">
+                                    <span class="help-block m-b-none"><i class="fa fa-info-circle"></i> 这里写点提示的内容</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">名字：</label>
+                                <div class="col-sm-8">
+                                    <input id="lastname" name="lastname" class="form-control" type="text" aria-required="true" aria-invalid="false" class="valid">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">用户名：</label>
+                                <div class="col-sm-8">
+                                    <input id="username" name="username" class="form-control" type="text" aria-required="true" aria-invalid="true" class="error">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">密码：</label>
+                                <div class="col-sm-8">
+                                    <input id="password" name="password" class="form-control" type="password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">确认密码：</label>
+                                <div class="col-sm-8">
+                                    <input id="confirm_password" name="confirm_password" class="form-control" type="password">
+                                    <span class="help-block m-b-none"><i class="fa fa-info-circle"></i> 请再次输入您的密码</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">E-mail：</label>
+                                <div class="col-sm-8">
+                                    <input id="email" name="email" class="form-control" type="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-8 col-sm-offset-3">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" class="checkbox" id="agree" name="agree"> 我已经认真阅读并同意《H+使用协议》
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-8 col-sm-offset-3">
+                                    <button class="btn btn-primary" type="submit">提交</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/content.min.js?v=1.0.0"></script>
+    <script src="js/plugins/validate/jquery.validate.min.js"></script>
+    <script src="js/plugins/validate/messages_zh.min.js"></script>
+    <script src="js/demo/form-validate-demo.min.js"></script>
+    <script>
+		
+		!function ($) {
+		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
+		        $(this).find('em:first').toggleClass("glyphicon-minus");      
+		    }); 
+		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+//		$(window).on('resize', function () {
+//		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+//		})
+//		$(window).on('resize', function () {
+//		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+//		})
+	</script>	
+    
+</body>
+
+</html>

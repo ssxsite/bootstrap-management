@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网约车监管信息平台</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+<script data-require-id="js/echarts/chart/map" src="js/echarts/chart/map.js"></script>
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body class="gray-bg">
+	<!--导航-->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse ">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><span>福州市网约车</span>监管信息平台</a>
+				<ul class="user-menu">
+					<li class="dropdown pull-right">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Admin <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="index.html"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;&nbsp;前台首页</a></li>
+	                        <li><a href="index.html"><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;个人设置</a></li>
+	                        <li><a href="index.html"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;&nbsp;账户中心</a></li>
+	                        <li><a href="index.html"><span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;我的收藏</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div><!-- /.container-fluid -->
+	</nav>
+	<!--侧边栏-->
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		<form role="search">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="查询">
+			</div>
+		</form>
+		<ul class="nav menu">
+			<li ><a href="index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+			<li><a href="widgets.html"><span class="glyphicon glyphicon-th"></span> 窗口</a></li>
+			<li><a href="charts.html"><span class="glyphicon glyphicon-stats"></span> 图表</a></li>
+			<li class="parent">
+				<a href="#">
+					<span class="glyphicon glyphicon-list-alt"></span> 表格<span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span>
+				</a>
+				<ul class="children collapse" id="sub-item-1">
+					<li>
+						<a class="" href="tables.html"><span class="glyphicon glyphicon-share-alt"></span>基本表格</a>
+					</li>
+					<li>
+						<a class="" href="jqgrid.html">
+							<span class="glyphicon glyphicon-share-alt"></span> jqgrid表单
+						</a>
+					</li>
+				</ul>
+			
+			</li>
+			<li class="parent">
+				<a href="#">
+					<span class="glyphicon glyphicon-list"></span> 表单 <span data-toggle="collapse" href="#sub-item-2" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span> 
+				</a>
+				<ul class="children collapse" id="sub-item-2">
+					<li>
+						<a class="" href="forms.html"><span class="glyphicon glyphicon-share-alt"></span>bootstrap基本表单</a>
+					</li>
+					<li>
+						<a class="" href="sunmernote.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 插件表单
+						</a>
+					</li>
+					<li>
+						<a class="" href="forms-advanced.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 高级表单
+						</a>
+					</li>
+					<li>
+						<a class="" href="form-validate.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 验证表单
+						</a>
+					</li>
+				</ul>
+			
+				<!--<a href="forms.html"><span class="glyphicon glyphicon-pencil"></span> 表单</a></li>-->
+			<li><a href="panels.html"><span class="glyphicon glyphicon-info-sign"></span> 提示框 &amp; 面板</a></li>
+			<li class="parent">
+				<a href="#">
+					<span class="glyphicon glyphicon-list"></span> 下拉式列表 <span data-toggle="collapse" href="#sub-item-3" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span> 
+				</a>
+				<ul class="children collapse" id="sub-item-3">
+					<li>
+						<a class="active" href="net-car.html">
+							<span class="glyphicon glyphicon-share-alt"></span>网约车全国数据统计图
+						</a>
+					</li>
+					<li>
+						<a class="" href="404.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 404页面
+						</a>
+					</li>
+					<li>
+						<a class="" href="#">
+							<span class="glyphicon glyphicon-share-alt"></span> 自定义页面3
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li role="presentation" class="divider"></li>
+			<li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Login Page</a></li>
+		</ul>
+		<!--<div class="attribution">More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></div>-->
+	</div><!--/.sidebar-->
+	<!--右侧内容-->
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+		<!--面包屑-->
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+				<li>
+					<a href="#">下拉列表1</a>
+				</li>
+				<li class="active">网约车全国数据统计数据</li>
+			</ol>
+		</div><!--/.row-->
+		<!--大标题-->
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header">网约车全国数据统计数据</h1>
+			</div>
+		</div><!--/.row-->
+        
+        <div class="row">
+        	   <!--左边内容-->
+				<div class="col-lg-7">
+					<div class="row">
+						<!--1-->
+						<div class="col-md-4">
+							<div class="panel panel-blue panel-widget ">
+								<div class="row no-padding">
+									<div class="col-sm-5 col-lg-5 widget-left h_100">
+										<em class="glyphicon glyphicon-shopping-cart glyphicon-l"></em>
+									</div>
+									<div class="col-sm-7 col-lg-7 widget-right">
+										<div class="large">120</div>
+										<div class="text-muted">新订单</div>
+									</div>
+								</div>
+						</div>
+				    </div>
+						<!--2-->
+						<div class="col-md-4">
+							<div class="panel panel-orange panel-widget ">
+								<div class="row no-padding">
+									<div class="col-sm-5 col-lg-5 widget-left h_100">
+										<em class="glyphicon glyphicon-comment glyphicon-l"></em>
+									</div>
+									<div class="col-sm-7 col-lg-7 widget-right">
+										<div class="large">120</div>
+										<div class="text-muted">评论数</div>
+									</div>
+								</div>
+						</div>
+				    </div>
+						<!--3-->
+						<div class="col-md-4">
+							<div class="panel panel-teal panel-widget ">
+								<div class="row no-padding">
+									<div class="col-sm-5 col-lg-5 widget-left h_100">
+										<em class="glyphicon glyphicon-user glyphicon-l"></em>
+									</div>
+									<div class="col-sm-7 col-lg-7 widget-right">
+										<div class="large">120</div>
+										<div class="text-muted">用户数</div>
+									</div>
+								</div>
+						</div>
+				    </div>
+					</div><!--row-->
+					<!--中国地图-->
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default mar_t10">
+								<div class="panel-body">
+									<!--echart-->
+									<div id="mainMap" style="height:670px;"></div>
+								</div>
+							</div>
+						</div>
+					</div><!--row-->	
+				</div>
+				
+				<!--右边内容-->
+				<div class="col-lg-5">
+					<!--大标题-->
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="panel bg1">
+								<div class="panel-body h_100 t_center">
+										<span class="drd large">当日动</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-lg-7">
+							<p class="t_center middle">当日运营订单数</p>
+							<!--表1-->
+							<div class="panel panel-warning">
+								<div class="panel-heading ">
+									<div class="large t_center white">0.0063</div>
+								</div>
+								<div class="panel-body">
+										<p>当日运营订单数（万单）</p>
+										<div class="canvas-wrapper">
+											<canvas class="main-chart" id="bar-chart" height="260"></canvas>
+										</div>
+								</div>
+							</div>
+							
+			
+							<!--表2-->
+							<div class="panel panel-success">
+								<div class="panel-heading">
+									<div class="large t_center white">0.0063</div>
+								</div>
+								<div class="panel-body">
+										<p>分时运营车辆数</p>
+										<div class="canvas-wrapper">
+											<canvas class="main-chart" id="line-chart" height="280" ></canvas>
+										</div>
+								</div>
+							</div>
+						
+						</div>
+						
+						<div class="col-lg-5">
+							<p class="t_center middle">TOP运营情况</p>
+							<div class="panel panel-info">
+								<div class="panel-heading">
+									<div class="t_center "><h4 class="white">营运车辆/订单</h4></div>
+								</div>
+								<div class="panel-body t_center">
+									<ul class="list-unstyled">
+				                        <li><dl><dt class="middle">北京</dt><dd class="color-red large">2,778</dd></dl></li>
+				                        <li><dl><dt class="middle">合肥市</dt><dd class="color-blue large">7</dd></dl></li>
+				                        <li><dl><dt class="middle">无锡市</dt><dd class="color-orange large">5</dd></dl></li>
+				                        <li><dl><dt class="middle">南京市</dt><dd class="color-teal large">4</dd></dl></li>
+				                        <li><dl><dt class="middle">常州市</dt><dd class="color-red large">4</dd></dl></li>
+				                        <li><dl><dt class="middle">长沙市</dt><dd class="color-blue large">3</dd></dl></li>
+				                        <li><dl><dt class="middle">苏州市</dt><dd class="color-orange large">3</dd></dl></li>
+				                    </ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+        </div>
+		
+	</div>	<!--/.main-->
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart/chart.min.js"></script>
+	<script src="js/chart/chart-data-car.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/echarts/echarts.js"></script>
+	<script src="js/echarts/cn-map.js"></script>
+	
+	<script type="text/javascript">
+		/*日历*/
+//		$('#calendar').datepicker({
+//		});
+//		
+		/*左侧菜单点击事件优化*/
+		!function ($) {
+		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
+		        $(this).find('em:first').toggleClass("glyphicon-minus");      
+		    }); 
+		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+//		$(window).on('resize', function () {
+//		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+//		})
+//		$(window).on('resize', function () {
+//		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+//		})
+	</script>
+	
+</body>
+
+</html>

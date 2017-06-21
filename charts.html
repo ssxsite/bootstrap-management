@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网约车监管信息平台</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/datepicker3.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body class="gray-bg">
+<!--导航-->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse ">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><span>福州市网约车</span>监管信息平台</a>
+				<ul class="user-menu">
+					<li class="dropdown pull-right">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Admin <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="index.html"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;&nbsp;前台首页</a></li>
+	                        <li><a href="index.html"><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;个人设置</a></li>
+	                        <li><a href="index.html"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;&nbsp;账户中心</a></li>
+	                        <li><a href="index.html"><span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;我的收藏</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div><!-- /.container-fluid -->
+	</nav>
+	<!--侧边栏-->
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		<form role="search">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="查询">
+			</div>
+		</form>
+		<ul class="nav menu">
+			<li class=""><a href="index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+			<li><a href="widgets.html"><span class="glyphicon glyphicon-th"></span> 窗口</a></li>
+			<li class="active"><a href="charts.html"><span class="glyphicon glyphicon-stats"></span> 图表</a></li>
+			<li class="parent">
+				<a href="#">
+					<span class="glyphicon glyphicon-list-alt"></span> 表格<span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span>
+				</a>
+				<ul class="children collapse" id="sub-item-1">
+					<li>
+						<a class="" href="tables.html"><span class="glyphicon glyphicon-share-alt"></span>基本表格</a>
+					</li>
+					<li>
+						<a class="" href="jqgrid.html">
+							<span class="glyphicon glyphicon-share-alt"></span> jqgrid表单
+						</a>
+					</li>
+				</ul>
+			
+			</li>
+			<li class="parent">
+				<a href="#">
+					<span class="glyphicon glyphicon-list"></span> 表单 <span data-toggle="collapse" href="#sub-item-2" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span> 
+				</a>
+				<ul class="children collapse" id="sub-item-2">
+					<li>
+						<a class="" href="forms.html"><span class="glyphicon glyphicon-share-alt"></span>bootstrap基本表单</a>
+					</li>
+					<li>
+						<a class="" href="sunmernote.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 插件表单
+						</a>
+					</li>
+					<li>
+						<a class="" href="forms-advanced.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 高级表单
+						</a>
+					</li>
+					<li>
+						<a class="" href="form-validate.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 验证表单
+						</a>
+					</li>
+				</ul>
+			
+				<!--<a href="forms.html"><span class="glyphicon glyphicon-pencil"></span> 表单</a></li>-->
+			<li><a href="panels.html"><span class="glyphicon glyphicon-info-sign"></span> 提示框 &amp; 面板</a></li>
+			<li class="parent">
+				<a href="#">
+					<span class="glyphicon glyphicon-list"></span> 下拉式列表 <span data-toggle="collapse" href="#sub-item-3" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span> 
+				</a>
+				<ul class="children collapse" id="sub-item-3">
+					<li>
+						<a class="" href="net-car.html">
+							<span class="glyphicon glyphicon-share-alt"></span>网约车全国数据统计图
+						</a>
+					</li>
+					<li>
+						<a class="" href="404.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 404页面
+						</a>
+					</li>
+					<li>
+						<a class="" href="#">
+							<span class="glyphicon glyphicon-share-alt"></span> 自定义页面3
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li role="presentation" class="divider"></li>
+			<li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Login Page</a></li>
+		</ul>
+		<!--<div class="attribution">More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></div>-->
+	</div><!--/.sidebar-->
+	<!--右侧内容-->
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+				<li class="active">图表</li>
+			</ol>
+		</div><!--/.row-->
+		
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header">Charts</h1>
+				
+			</div>
+		</div><!--/.row-->
+		
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">Line Chart</div>
+					<div class="panel-body">
+						<div class="canvas-wrapper">
+							<canvas class="main-chart" id="line-chart" height="200" width="600"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/.row-->
+		
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">Bar Chart</div>
+					<div class="panel-body">
+						<div class="canvas-wrapper">
+							<canvas class="main-chart" id="bar-chart" height="200" width="600"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/.row-->		
+		
+		<div class="row">
+			<div class="col-md-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">Pie Chart</div>
+					<div class="panel-body">
+						<div class="canvas-wrapper">
+							<canvas class="chart" id="pie-chart" ></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">Doughnut Chart</div>
+					<div class="panel-body">
+						<div class="canvas-wrapper">
+							<canvas class="chart" id="doughnut-chart" ></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/.row-->
+		
+		<div class="row">
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>Label:</h4>
+						<div class="easypiechart" id="easypiechart-blue" data-percent="92" ><span class="percent">92%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>Label:</h4>
+						<div class="easypiechart" id="easypiechart-orange" data-percent="65" ><span class="percent">65%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>Label:</h4>
+						<div class="easypiechart" id="easypiechart-teal" data-percent="56" ><span class="percent">56%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>Label:</h4>
+						<div class="easypiechart" id="easypiechart-red" data-percent="27" ><span class="percent">27%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/.row-->
+											
+	</div>	<!--/.main-->
+	  
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart/chart.min.js"></script>
+	<script src="js/chart/chart-data-charts.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script>
+		!function ($) {
+		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
+		        $(this).find('em:first').toggleClass("glyphicon-minus");      
+		    }); 
+		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+//		$(window).on('resize', function () {
+//		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+//		})
+//		$(window).on('resize', function () {
+//		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+//		})
+	</script>	
+</body>
+
+</html>
